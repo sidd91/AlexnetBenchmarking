@@ -133,7 +133,7 @@ To run the Opencl version of the program execute the following steps-
 
 13. Check the print messages in the Terminal console screen.
 
-#### The detailed tutorial for running OpenCL on ZYNQ FPGA can be found [here](Tutorial  https://gitlab.com/Tango-DNNbench/Tango/tree/master/FPGA)
+#### The detailed tutorial for running OpenCL on ZYNQ FPGA can be found [here](https://gitlab.com/Tango-DNNbench/Tango/tree/master/FPGA)
 
 
 ### Using the Image_rgb_to_txt.py, 
