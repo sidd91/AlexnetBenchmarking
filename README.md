@@ -6,8 +6,8 @@ The project has two sections -
 1. FPGA 
 2. GPU
 
-Before proceeding please download the data from [here](https://gitlab.com/Tango-DNNbench/Tango/-/archive/master/Tango-master.zip?path=GPU%2FAlexNet%2Fdata)
-and unzip it. Make sure the folder name is data. 
+**Important:** Before proceeding please download the data from [here](https://gitlab.com/Tango-DNNbench/Tango/-/archive/master/Tango-master.zip?path=GPU%2FAlexNet%2Fdata)
+and unzip it. **If the folder name is other than data then please rename it to data** 
 
 The FPGA directory hosts the sub-directories from Xilinx HLS and Xilinx Vivado. We need the Xilinx Vivado and Xilinx SDK installed for this program to run
 ```
@@ -76,7 +76,7 @@ To run the Opencl version of the program execute the following steps-
 
 ``` cd cudaProject```
 
-3. Copy ```data``` folder which was downloaded and unzipped in the very beginning here. After copying the structure of the cudaProject folder will look like this
+3. Copy ```data``` folder which was downloaded and unzipped in the very beginning in this directory. After copying the structure of the cudaProject folder will look like this
 
 The GPU directory hosts the Cuda version of Alexnet and Opencl version of Alexnet
 
