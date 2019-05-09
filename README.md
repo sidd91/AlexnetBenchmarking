@@ -6,25 +6,8 @@ The project has two sections -
 1. FPGA 
 2. GPU
 
-The GPU directory hosts the Cuda version of Alexnet and Opencl version of Alexnet
-```
-GPU
-|   ├── data
-│   ├── AlexNet_cuda
-│   │   ├── Makefile
-│   │   ├── README
-│   │   ├── alexnet_host.cu
-│   │   ├── an_kernel.cu
-│   │   └── build.sh
-│   ├── AlexNet_opencl
-│   │   ├── AlexNet_opencl
-│   │   ├── Makefile
-│   │   ├── alexnet_host.cpp
-│   │   └── alexnet_opencl.cl
-│   └── log
-│       └── execution.log
-```
-
+Before proceeding please download the data from [here](https://gitlab.com/Tango-DNNbench/Tango/-/archive/master/Tango-master.zip?path=GPU%2FAlexNet%2Fdata)
+and unzip it. Make sure the folder name is data. 
 
 The FPGA directory hosts the sub-directories from Xilinx HLS and Xilinx Vivado. We need the Xilinx Vivado and Xilinx SDK installed for this program to run
 ```
@@ -62,6 +45,27 @@ FPGA
         └── project_execution_layer_con1_p2.xpr
 ```
 
+
+
+The GPU directory hosts the Cuda version of Alexnet and Opencl version of Alexnet
+```
+GPU
+│   ├── AlexNet_cuda
+│   │   ├── Makefile
+│   │   ├── README
+│   │   ├── alexnet_host.cu
+│   │   ├── an_kernel.cu
+│   │   └── build.sh
+│   ├── AlexNet_opencl
+│   │   ├── AlexNet_opencl
+│   │   ├── Makefile
+│   │   ├── alexnet_host.cpp
+│   │   └── alexnet_opencl.cl
+│   └── log
+│       └── execution.log
+```
+
+
 ### Building the Opencl version
 To run the Opencl version of the program execute the following steps- 
 1. Clone this repository 
@@ -71,6 +75,29 @@ To run the Opencl version of the program execute the following steps-
 2. Switch to the cudaProject Directory
 
 ``` cd cudaProject```
+
+3. Copy ```data``` folder which was downloaded and unzipped in the very beginning here. After copying the structure of the cudaProject folder will look like this
+
+The GPU directory hosts the Cuda version of Alexnet and Opencl version of Alexnet
+
+```
+GPU
+|   ├── data
+│   ├── AlexNet_cuda
+│   │   ├── Makefile
+│   │   ├── README
+│   │   ├── alexnet_host.cu
+│   │   ├── an_kernel.cu
+│   │   └── build.sh
+│   ├── AlexNet_opencl
+│   │   ├── AlexNet_opencl
+│   │   ├── Makefile
+│   │   ├── alexnet_host.cpp
+│   │   └── alexnet_opencl.cl
+│   └── log
+│       └── execution.log
+```
+
 
 3. Copy data folder to AlexNet_opencl and go to AlexNet_opencl directory
 
