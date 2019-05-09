@@ -9,7 +9,7 @@ The project has two sections -
 The GPU directory hosts the Cuda version of Alexnet and Opencl version of Alexnet
 ```
 GPU
-|   ├── Data
+|   ├── data
 │   ├── AlexNet_cuda
 │   │   ├── Makefile
 │   │   ├── README
