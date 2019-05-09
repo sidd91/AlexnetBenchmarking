@@ -66,6 +66,8 @@ The output of the above command should look like below -
 ├── GPU
 ├── Image_rgb_to_txt.py
 ├── README.md
+├── Validation_results_with_various_inputs.xlsx
+└── graph.xlsx
 └── data
 ```
 
@@ -145,3 +147,6 @@ e.g.
 
 ```python3 Image_rgb_to_txt.py ILSVRC2012_val_00000573.JPEG```
 
+
+### Validation_results_with_various_inputs.xlsx ###
+We tested the accuracy of the model using 300 images from Imagenet dataset. The summary of the results are located in this file. 
