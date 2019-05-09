@@ -47,7 +47,8 @@ FPGA
 
 
 
-The GPU directory hosts the Cuda version of Alexnet and Opencl version of Alexnet
+GPU directory will hosts the Cuda version of Alexnet and Opencl version of Alexnet. Initially, it's structure will look like this. 
+
 ```
 GPU
 │   ├── AlexNet_cuda
@@ -76,24 +77,19 @@ To run the Opencl version of the program execute the following steps-
 
 ``` cd cudaProject```
 
-3. Copy ```data``` folder which was downloaded and unzipped in the very beginning in this directory. After copying the structure of the cudaProject folder will look like this
+3. Copy ```data``` folder which was downloaded and unzipped in the very beginning in this directory. After copying the data folder in the cudaProject folder. 
+
+The structure of the **cudaProject** folder can be verified by running the command
 
 ```
-GPU
-|   ├── data
-│   ├── AlexNet_cuda
-│   │   ├── Makefile
-│   │   ├── README
-│   │   ├── alexnet_host.cu
-│   │   ├── an_kernel.cu
-│   │   └── build.sh
-│   ├── AlexNet_opencl
-│   │   ├── AlexNet_opencl
-│   │   ├── Makefile
-│   │   ├── alexnet_host.cpp
-│   │   └── alexnet_opencl.cl
-│   └── log
-│       └── execution.log
+tree -L 1 ./
+
+```
+├── FPGA
+├── GPU
+├── Image_rgb_to_txt.py
+├── README.md
+└── data
 ```
 
 4. Go to GPU folder
