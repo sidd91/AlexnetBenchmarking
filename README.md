@@ -85,6 +85,8 @@ The structure of the **cudaProject** folder can be verified by running the comma
 tree -L 1 ./
 
 ```
+
+```
 ├── FPGA
 ├── GPU
 ├── Image_rgb_to_txt.py
