@@ -9,45 +9,20 @@ The project has two sections -
 **Important:** Before proceeding please download the data from [here](https://gitlab.com/Tango-DNNbench/Tango/-/archive/master/Tango-master.zip?path=GPU%2FAlexNet%2Fdata)
 and unzip it. **If the folder name is other than data then please rename it to data** 
 
-The FPGA directory hosts the sub-directories from Xilinx HLS and Xilinx Vivado. We need the Xilinx Vivado and Xilinx SDK installed for this program to run
+The FPGA directory hosts the sub-directories from Xilinx HLS and Xilinx Vivado. You will need the Xilinx Vivado and Xilinx SDK installed to run this program
+
 ```
 FPGA
 ├── HLS
 │   ├── layer1_con_p1
-│   │   ├── kernel.xml
-│   │   ├── layer1.cl
-│   │   ├── solution1
-│   │   └── vivado_hls.app
 │   ├── layer1_con_p2
-│   │   ├── executeFirstLayer1_conv_p2.cl
-│   │   ├── kernel.xml
-│   │   ├── solution1
-│   │   └── vivado_hls.app
 │   ├── layer1_con_p3
-│   │   ├── executeFirstLayer1_p3.cl
-│   │   ├── kernel.xml
-│   │   ├── solution1
-│   │   └── vivado_hls.app
 │   └── layer1_con_p4
-│       ├── executeFirstLayer1_p4.cl
-│       ├── kernel.xml
-│       ├── solution1
-│       └── vivado_hls.app
 └── Vivado
     └── project_execution_layer_con1_p2
-        ├── project_execution_layer_con1_p2.cache
-        ├── project_execution_layer_con1_p2.hw
-        ├── project_execution_layer_con1_p2.ip_user_files
-        ├── project_execution_layer_con1_p2.runs
-        ├── project_execution_layer_con1_p2.sdk
-        ├── project_execution_layer_con1_p2.sim
-        ├── project_execution_layer_con1_p2.srcs
-        └── project_execution_layer_con1_p2.xpr
 ```
 
-
-
-GPU directory will hosts the Cuda version of Alexnet and Opencl version of Alexnet. Initially, it's structure will look like this. 
+GPU directory will hosts the Cuda version of Alexnet and Opencl version of Alexnet. ***Initially***, it's structure will look like this. 
 
 ```
 GPU
@@ -83,8 +58,8 @@ The structure of the **cudaProject** folder can be verified by running the comma
 
 ```
 tree -L 1 ./
-
 ```
+The output of the above command should look like below - 
 
 ```
 ├── FPGA
