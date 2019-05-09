@@ -67,7 +67,8 @@ The output of the above command should look like below -
 ├── Image_rgb_to_txt.py
 ├── README.md
 ├── Validation_results_with_various_inputs.xlsx
-└── graph.xlsx
+├── FPGAtutorial.pdf
+├── graph.xlsx
 └── data
 ```
 
@@ -111,6 +112,8 @@ The output of the above command should look like below -
 ### Running the FPGA version of the layers
 
 1. This guide assumes that you have Vivado installed. If not then please download it from [here](https://www.xilinx.com/member/forms/download/xef-vivado.html?filename=Xilinx_Vivado_SDK_Web_2018.3_1207_2324_Win64.exe)
+
+#### Below steps only provide the summary of the steps. Detailed steps are listed in [this](https://github.com/sidd91/cudaProject/blob/master/FPGAtutorial.pdf) file "FPGAtutorial.pdf"
 
 2. Launch Xilinx Vivado
 
