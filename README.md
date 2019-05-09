@@ -1,4 +1,4 @@
-# Benchmarking execution time of AlexNet[1] CNN on FPGA and GPU.
+# Benchmarking execution time of AlexNet[[1]](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf) CNN on FPGA and GPU.
 #### FPGA used - Zynq ZC706
 #### GPU used -  Nvidia Tesla P100
 
@@ -105,8 +105,6 @@ To run the Opencl version of the program execute the following steps-
 
 ```./AN 1 ```
 
-```./AlexNet_opencl data/input.txt ```
-
 ### Running the FPGA version of the layers
 
 1. This guide assumes that you have Vivado installed. If not then please download it from [here](https://www.xilinx.com/member/forms/download/xef-vivado.html?filename=Xilinx_Vivado_SDK_Web_2018.3_1207_2324_Win64.exe)
@@ -134,3 +132,15 @@ To run the Opencl version of the program execute the following steps-
 12. Go to debug configuration and run debug
 
 13. Check the print messages in the Terminal console screen.
+
+#### The detailed tutorial for running OpenCL on ZYNQ FPGA can be found [here](Tutorial  https://gitlab.com/Tango-DNNbench/Tango/tree/master/FPGA)
+
+
+### Using the Image_rgb_to_txt.py, 
+This is a python script which takes any image as input and it would scale down the image to 227x227 and then extact the RGB values to a text file.
+ImageNet validation dataset can be downloaded from [[3]](http://www.image-net.org/
+) and any image from it can be passed to script.
+e.g.
+
+```python3 Image_rgb_to_txt.py ILSVRC2012_val_00000573.JPEG```
+
