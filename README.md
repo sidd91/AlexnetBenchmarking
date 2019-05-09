@@ -1,5 +1,6 @@
-# cudaProject
-Project for CMPE 214
+# Benchmarking execution time of AlexNet[1] CNN on FPGA and GPU.
+#### FPGA used - Zynq ZC706
+#### GPU used -  Nvidia Tesla P100
 
 The project has two sections -  
 1. FPGA 
@@ -25,7 +26,7 @@ GPU
 ```
 
 
-The FPGA directory hosts the sub-directories
+The FPGA directory hosts the sub-directories from Xilinx HLS and Xilinx Vivado. We need the Xilinx Vivado and Xilinx SDK installed for this program to run
 ```
 FPGA
 ├── HLS
