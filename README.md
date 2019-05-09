@@ -1,6 +1,7 @@
 # Benchmarking execution time of AlexNet[[1]](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf) CNN on FPGA and GPU.
 #### FPGA used - Zynq ZC706
 #### GPU used -  Nvidia Tesla P100
+**For the baseline code of Alexnet i.e. Alexnet CUDA. We referred the Tango Benchmarking Suite from [here](https://gitlab.com/Tango-DNNbench/Tango) and ported it to Opencl**
 
 The project has two sections -  
 1. FPGA 
