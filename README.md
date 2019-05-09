@@ -28,10 +28,39 @@ GPU
 The FPGA directory hosts the sub-directories
 ```
 FPGA
-|   ├── HLS
-│   ├── VIVADO
-
+├── HLS
+│   ├── layer1_con_p1
+│   │   ├── kernel.xml
+│   │   ├── layer1.cl
+│   │   ├── solution1
+│   │   └── vivado_hls.app
+│   ├── layer1_con_p2
+│   │   ├── executeFirstLayer1_conv_p2.cl
+│   │   ├── kernel.xml
+│   │   ├── solution1
+│   │   └── vivado_hls.app
+│   ├── layer1_con_p3
+│   │   ├── executeFirstLayer1_p3.cl
+│   │   ├── kernel.xml
+│   │   ├── solution1
+│   │   └── vivado_hls.app
+│   └── layer1_con_p4
+│       ├── executeFirstLayer1_p4.cl
+│       ├── kernel.xml
+│       ├── solution1
+│       └── vivado_hls.app
+└── Vivado
+    └── project_execution_layer_con1_p2
+        ├── project_execution_layer_con1_p2.cache
+        ├── project_execution_layer_con1_p2.hw
+        ├── project_execution_layer_con1_p2.ip_user_files
+        ├── project_execution_layer_con1_p2.runs
+        ├── project_execution_layer_con1_p2.sdk
+        ├── project_execution_layer_con1_p2.sim
+        ├── project_execution_layer_con1_p2.srcs
+        └── project_execution_layer_con1_p2.xpr
 ```
+
 ### Building the Opencl version
 To run the Opencl version of the program execute the following steps- 
 1. Clone this repository 
@@ -73,4 +102,30 @@ To run the Opencl version of the program execute the following steps-
 
 ```./AlexNet_opencl data/input.txt ```
 
+### Running the FPGA version of the layers
 
+1. This guide assumes that you have Vivado installed. If not then please download it from [here](https://www.xilinx.com/member/forms/download/xef-vivado.html?filename=Xilinx_Vivado_SDK_Web_2018.3_1207_2324_Win64.exe)
+
+2. Launch Xilinx Vivado
+
+3. Open Project
+
+4. Go the FPGA directory -> VIVADO -> project_execution_layer_con1_p2
+
+5. Select project_execution_layer_con1_p2.xpr and click on Open
+
+6. Go to Files and go to Launch SDK
+
+7. Let the Xilinx SDK load
+
+8. Click on the Debug option and select Debug configurations
+
+9. Create a new configuration and choose the following options
+
+10. Go the Application tab and select the processor
+
+11. In the console window. Go to the SDK console and click on the plus(+) icon and select the COM port of your device. 
+
+12. Go to debug configuration and run debug
+
+13. Check the print messages in the Terminal console screen.
