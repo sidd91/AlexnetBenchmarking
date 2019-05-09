@@ -78,8 +78,6 @@ To run the Opencl version of the program execute the following steps-
 
 3. Copy ```data``` folder which was downloaded and unzipped in the very beginning in this directory. After copying the structure of the cudaProject folder will look like this
 
-The GPU directory hosts the Cuda version of Alexnet and Opencl version of Alexnet
-
 ```
 GPU
 |   ├── data
@@ -98,18 +96,21 @@ GPU
 │       └── execution.log
 ```
 
+4. Go to GPU folder
 
-3. Copy data folder to AlexNet_opencl and go to AlexNet_opencl directory
+``` cd GPU ```
 
-```cp -r data/  AlexNet_opencl/```
+5. Copy data folder to AlexNet_opencl and go to AlexNet_opencl directory
+
+```cp -r ../data/  AlexNet_opencl/```
 
 ```cd AlexNet_opencl```
 
-4. Build the opencl code
+6. Build the opencl code
 
  ```make clean && make```
 
-5. Execute the opencl code
+7. Execute the opencl code
 
 ```./AlexNet_opencl data/input.txt ```
 
@@ -120,7 +121,7 @@ GPU
   
 2. Copy data folder to AlexNet_cuda and go to AlexNet_cuda directory
 
-```cp -r data/  AlexNet_cuda/```
+```cp -r ../data/  AlexNet_cuda/```
 
 ```cd AlexNet_cuda```
 
