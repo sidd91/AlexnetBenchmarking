@@ -75,6 +75,7 @@ To run the Opencl version of the program execute the following steps-
 3. Copy data folder to AlexNet_opencl and go to AlexNet_opencl directory
 
 ```cp -r data/  AlexNet_opencl/```
+
 ```cd AlexNet_opencl```
 
 4. Build the opencl code
@@ -87,11 +88,13 @@ To run the Opencl version of the program execute the following steps-
 
 ### Building the CUDA Version
 1. Go back to project_code
-	$ cd  ../
+
+```cd  ../ ```
   
 2. Copy data folder to AlexNet_cuda and go to AlexNet_cuda directory
 
 ```cp -r data/  AlexNet_cuda/```
+
 ```cd AlexNet_cuda```
 
 3. Build the CUDA code
@@ -99,6 +102,7 @@ To run the Opencl version of the program execute the following steps-
  ```./build.sh```
 
 4. Execute the CUDA code
+
 ```./AN 1 ```
 
 ```./AlexNet_opencl data/input.txt ```
@@ -123,7 +127,7 @@ To run the Opencl version of the program execute the following steps-
 
 9. Create a new configuration and choose the following options
 
-10. Go the Application tab and select the processor
+10. Go to the Application tab and select the processor
 
 11. In the console window. Go to the SDK console and click on the plus(+) icon and select the COM port of your device. 
 
